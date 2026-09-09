@@ -1,0 +1,50 @@
+<link href="style.css" rel="stylesheet" />
+<link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.7/dist/css/bootstrap.min.css" rel="stylesheet"
+    integrity="sha384-LN+7fdVzj6u52u30Kp6M/trliBMCMKTyK833zpbD+pXdCLuTusPj697FH4R/5mcr" crossorigin="anonymous">
+<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.7.2/css/all.min.css"
+    integrity="sha512-Evv84Mr4kqVGRNSgIGL/F/aIDqQb7xQ2vcrdIwxfjThSH8CSR7PBEakCr51Ck+w+/U6swU2Im1vVX0SVk9ABhg=="
+    crossorigin="anonymous" referrerpolicy="no-referrer" />
+
+<div class="container mt-4">
+    <h2 class="text-center mb-4">Restaurant Menu</h2>
+    <input type="text" id="search" class="form-control mb-3" placeholder="search Food" />
+    <div class="row" id="menu">
+        <div class="col-md-4">
+            <h4>Starters</h4>
+            <ul class="list-group">
+                <li class="list-group-item menu-item" data-name="Spring Rolls" data-price="5">Spring Rolls &#8377;5</li>
+                <li class="list-group-item menu-item" data-name="Garlic Bread" data-price="20">Garlic Bread &#8377;20
+                </li>
+            </ul>
+        </div>
+        <div class="col-md-4">
+            <h4>Main Course</h4>
+            <ul class="list-group">
+                <li class="list-group-item menu-item" data-name="Grilled Chicken" data-price="500">Grilled Chicken
+                    &#8377;500</li>
+                <li class="list-group-item menu-item" data-name="Pasta Alfredo" data-price="250">Pasta Alfredo
+                    &#8377;200</li>
+            </ul>
+        </div>
+        <div class="col-md-4">
+            <h4>Desserts</h4>
+            <ul class="list-group">
+                <li class="list-group-item menu-item" data-name="Chocolate Cake" data-price="300">Chocolate Cake
+                    &#8377;500</li>
+                <li class="list-group-item menu-item" data-name="Ice Cream" data-price="200">Ice Cream &#8377;200</li>
+            </ul>
+        </div>
+    </div>
+
+    <h2 class="mt-4">Order Summary</h2>
+    <ul id="order-summary" class="list-group"></ul>
+    <p class="mt-3"><b>Total &#8377; <span id="total"></span></b></p>
+    <button id="clear-order" class="btn btn-danger mt-3">Clear Order</button>
+    <button id="print-bill" class="btn btn-primary mt-3">Print Bill</button>
+</div>
+
+
+<script src="script.js"></script>
+<script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.6/dist/js/bootstrap.bundle.min.js"
+    integrity="sha384-j1CDi7MgGQ12Z7Qab0qlWQ/Qqz24Gc6BM0thvEMVjHnfYGF0rmFCozFSxQBxwHKO"
+    crossorigin="anonymous"></script>
